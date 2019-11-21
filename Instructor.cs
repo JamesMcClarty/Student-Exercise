@@ -13,10 +13,10 @@ namespace StudentExercises{
         }
         
         //public
-        string _firstName {get;}
-        private string _lastName {get;}
-        private string _slackHandle {get;}
-        private string _specialty {get;}
+        public string _firstName {get;}
+        public string _lastName {get;}
+        public string _slackHandle {get;}
+        public string _specialty {get;}
         public Cohort CurrentCohort {get; set;}
         public void AssignExercise(Student student, Exercise exercise){
             student.Exercises.Add(exercise);
