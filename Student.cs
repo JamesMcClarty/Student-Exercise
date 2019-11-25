@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace StudentExercises
 {
 
-    public class Student
+    public class Student: NSSPerson
     {
         public Student(string first, string last, string slack){
             _firstName = first;
@@ -13,10 +13,6 @@ namespace StudentExercises
         }
 
         //public
-        public string _firstName {get;}
-        public string _lastName {get;}
-        public string _slackHandle {get;}
-        public Cohort CurrentCohort {get; set;}
         public List<Exercise> Exercises = new List<Exercise>();
     }
 }
